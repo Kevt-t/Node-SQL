@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <!-- Links the external JavaScript file "script.js" and defers its execution 
+    until the HTML document is fully parsed -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Task Manager</h1>
+   
+    <!-- Form for adding a new task -->
+    <form id="taskForm">
+        <!-- Label for the task title input -->
+        <label for="title">Title:</label>
+        <!-- Input field for the task title; required ensures it's not left empty -->
+        <input type="text" id="title" name="title" required>
+        <br>
+        <!-- Label for the task description input -->
+        <label for="description">Description:</label>
+        <!-- Textarea for entering the task description -->
+        <textarea id="description" name="description"></textarea>
+        <br>
+        <!-- Button to submit the form and add a new task -->
+        <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Div to display feedback messages (e.g., success or error messages) -->
+    <div id="message"></div>
+</body>
+</html>
